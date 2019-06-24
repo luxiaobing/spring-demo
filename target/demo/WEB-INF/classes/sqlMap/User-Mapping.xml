@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.lxb.dao.IUserInfoMapper">
+    <resultMap id="UserMap" type="com.lxb.model.UserInfoDo">
+        <result column="id" property="id" />
+        <result column="user_code" property="userCode" />
+        <result column="status" property="status"/>
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+    <sql id="UserColumns">
+        t0.id,t0.user_code,t0.status,t0.create_time,t0.update_time
+    </sql>
+
+    <select id="queryByUserCode" resultMap="UserMap">
+        SELECT
+        <include refid="UserColumns" />
+        FROM user_info t0
+        WHERE t0.user_code = #{userCode}
+        AND t0.status  = 1
+    </select>
+    <insert id="saveUserInfoDo" parameterType="com.lxb.model.UserInfoDo">
+           insert into user_info(user_code, status, create_time, update_time)
+               values( #{userInfoDo.userCode}, #{userInfoDo.status}, #{userInfoDo.createTime}, #{userInfoDo.updateTime})
+   </insert>
+</mapper>
