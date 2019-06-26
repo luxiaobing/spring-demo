@@ -1,5 +1,6 @@
 com\lxb\model\BaseDo.class
 com\lxb\model\LogDo.class
+com\lxb\excel\ExcelController.class
 com\lxb\service\impl\UserInfoServiceImpl.class
 com\lxb\dataSource\DynamicDataSourceHolder.class
 com\lxb\aspect\DataSource.class
@@ -17,6 +18,7 @@ com\lxb\test\FieldClass.class
 com\lxb\mybatis\CustomSqlSessionTemplate$1.class
 com\lxb\example\MyQueueThreadTest$1.class
 com\lxb\test\TestSynchronized.class
+com\lxb\excel\ExportExcelUtils.class
 com\lxb\example\HomeController.class
 com\lxb\test\TestThread$ThreadTask.class
 com\lxb\dao\IUserInfoMapper.class
