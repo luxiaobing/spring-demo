@@ -1,7 +1,7 @@
 package com.lxb.example;
 
 import com.alibaba.fastjson.JSON;
-import com.lxb.excel.ExportExcelUtils;
+import com.lxb.utils.ExportExcelUtils;
 import com.lxb.model.UserInfoDo;
 import com.lxb.service.IUserInfoService;
 
