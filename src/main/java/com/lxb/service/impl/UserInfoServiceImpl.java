@@ -38,7 +38,7 @@ public class UserInfoServiceImpl implements IUserInfoService {
         return userInfoMapper.queryByUserCode(userCode);
     }
 
-    //@Transactional
+    @Transactional
     @DataSource("ds_1")
     public int saveUserInfo() {
 

@@ -1,4 +1,4 @@
-﻿# spring-demo
+# spring-demo
 一个可供直接使用的单机spring应用模板，可以直接应用在真实开发项目里.
 ## 项目包括
 -  实现了基本的spring的controller、service、dao、map等各个应用层
@@ -13,3 +13,5 @@
 -  引入redis缓存
 -  引入dubbo 等rpc服务
 -  会持续将项目拆分为多个节点
+-  解决线程池访问httpclient部分超时的问题
+-  用反射实现多个sheet、多级header的excel导出功能
