@@ -25,7 +25,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * ${DESCRIPTION}
+ * 导出excelUtil 类
  *
  * @author Xiaobing.Lu
  * @create 2019-06-25 22:12
