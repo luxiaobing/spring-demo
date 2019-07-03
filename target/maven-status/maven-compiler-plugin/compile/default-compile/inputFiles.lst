@@ -22,4 +22,5 @@ D:\workspace\spring-demo\src\main\java\com\lxb\aspect\FBS.java
 D:\workspace\spring-demo\src\main\java\com\lxb\dao\ILogMapper.java
 D:\workspace\spring-demo\src\main\java\com\lxb\aspect\LoginCheckAspect.java
 D:\workspace\spring-demo\src\main\java\com\lxb\model\UserInfoDo.java
+D:\workspace\spring-demo\src\main\java\com\lxb\utils\NewExcelExportUtil.java
 D:\workspace\spring-demo\src\main\java\com\lxb\dataSource\DynamicDataSourceHolder.java

@@ -1,3 +1,4 @@
+com\lxb\utils\NewExcelExportUtil.class
 com\lxb\model\BaseDo.class
 com\lxb\model\LogDo.class
 com\lxb\service\impl\UserInfoServiceImpl.class
