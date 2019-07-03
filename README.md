@@ -9,9 +9,9 @@
 -  使用注解生成了可切换的多数据源
 -  使用spring + jta 实现了多个数据源下的分布式事物
 -  新增加了导出多个sheet、多级header的excel的功能
+-  引入dubbo rpc服务,配合dubbo-demo即可直接使用
 ## 后续计划
 -  引入redis缓存
--  引入dubbo 等rpc服务
 -  会持续将项目拆分为多个节点
 -  解决线程池访问httpclient部分超时的问题
 -  用反射实现多个sheet、多级header的excel导出功能
