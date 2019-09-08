@@ -196,4 +196,9 @@ public class HomeController {
 
         return "aa";
     }
+
+
+    public static void main(String[] args) {
+        System.out.println("hh");
+    }
 }
