@@ -8,8 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c527d71c-474d-49cf-ac5b-ce47bda87118" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 =======
+=======
+>>>>>>> parent of beef73a... 测试git3
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lxb/example/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/lxb/example/HomeController.java" />
 >>>>>>> parent of beef73a... 测试git3
     </list>
@@ -67,8 +70,13 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lxb/example/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="1950">
               <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+=======
+            <state relative-caret-position="824">
+              <caret line="204" column="31" lean-forward="false" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
+>>>>>>> parent of beef73a... 测试git3
 =======
             <state relative-caret-position="824">
               <caret line="204" column="31" lean-forward="false" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
@@ -624,7 +632,11 @@
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="37870000" />
+=======
+    <option name="totallyTimeSpent" value="37078000" />
+>>>>>>> parent of beef73a... 测试git3
 =======
     <option name="totallyTimeSpent" value="37078000" />
 >>>>>>> parent of beef73a... 测试git3
@@ -1052,8 +1064,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lxb/example/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="1950">
           <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+=======
+        <state relative-caret-position="824">
+          <caret line="204" column="31" lean-forward="false" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
+>>>>>>> parent of beef73a... 测试git3
 =======
         <state relative-caret-position="824">
           <caret line="204" column="31" lean-forward="false" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
