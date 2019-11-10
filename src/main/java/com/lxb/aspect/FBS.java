@@ -69,7 +69,6 @@ public class FBS {
      * 比如foo()方法里面调用bar()，但是bar()另外一个数据源，
      * bar()执行时，切换到自己数据源，执行完以后，要切换到foo()所需要的数据源，以供
      * foo()继续执行。
-     * <p>创建时间： 2013-8-16 下午4:27:06</p>
      */
     @After("methodWithChooseAnnotation()")
     public void restoreDataSourceAfterMethodExecution() {
@@ -79,8 +78,6 @@ public class FBS {
 
 
     /**
-     * <li>创建时间： 2013-6-17 下午5:34:13</li> <li>创建人：amos.zhou</li> <li>方法描述 :</li>
-     *
      * @param targetClass
      * @param methodName
      * @return
@@ -99,8 +96,6 @@ public class FBS {
 
     /**
      * <li>创建时间： 2013-6-17 下午5:06:02</li>
-     * <li>创建人：amos.zhou</li>
-     * <li>方法描述 : 确定
      * 最终数据源，如果方法上设置有数据源，则以方法上的为准，如果方法上没有设置，则以类上的为准，如果类上没有设置，则使用默认数据源</li>
      *
      * @param classDS
@@ -116,9 +111,6 @@ public class FBS {
     }
 
     /**
-     * <li>创建时间： 2013-6-17 下午4:33:03</li> <li>创建人：amos.zhou</li> <li>方法描述 : 类级别的 @ChooseDataSource
-     * 的解析</li>
-     *
      * @param targetClass
      * @return
      */
