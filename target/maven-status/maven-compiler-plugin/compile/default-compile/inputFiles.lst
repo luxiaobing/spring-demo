@@ -8,6 +8,7 @@ D:\workspace\spring-demo\src\main\java\com\lxb\service\IUserInfoService.java
 D:\workspace\spring-demo\src\main\java\com\lxb\dao\IUserInfoMapper.java
 D:\workspace\spring-demo\src\main\java\com\lxb\interceptor\AuthorityInterceptor.java
 D:\workspace\spring-demo\src\main\java\com\lxb\dataSource\DynamicDataSource.java
+D:\workspace\spring-demo\src\main\java\com\lxb\mq\RabbitmqController.java
 D:\workspace\spring-demo\src\main\java\com\lxb\test\ClassTest.java
 D:\workspace\spring-demo\src\main\java\com\lxb\aspect\DataSource.java
 D:\workspace\spring-demo\src\main\java\com\lxb\test\TestThread.java

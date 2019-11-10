@@ -32,3 +32,4 @@ com\lxb\test\TestSynchronized$MultiThreadTest.class
 com\lxb\service\IUserInfoService.class
 com\lxb\aspect\FBS.class
 com\lxb\dao\ILogMapper.class
+com\lxb\mq\RabbitmqController.class

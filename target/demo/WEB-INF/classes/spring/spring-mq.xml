@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/rabbit
+    http://www.springframework.org/schema/rabbit/spring-rabbit-1.0.xsd">
+    <description>rabbitmq 连接服务配置</description>
+    <!-- 连接配置 -->
+    <rabbit:connection-factory id="connectionFactory" host="127.0.0.1" username="guest" password="guest" port="5672" />
+    <rabbit:admin connection-factory="connectionFactory"/>
+    <!-- 定义模板 -->
+    <rabbit:template exchange="direct.exchange" id="amqpTemplate" connection-factory="connectionFactory"  routing-key="wzh"/>
+
+    <!--  申明一个消息队列Queue   -->
+    <rabbit:queue id="rabbitQueue" name="com.yingmu.mq.test" durable="false" auto-delete="false"/>
+    <!--<bean id="serverMessageListener" class="com.hh.listener.ServerMessageListener"/>
+    <bean id="messageContainer" class="org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer">
+        <property name="queues" ref="rabbitQueue"></property>
+        <property name="exposeListenerChannel" value="true"></property>
+        <property name="maxConcurrentConsumers" value="10"></property>
+        <property name="concurrentConsumers" value="2"></property>
+        <property name="connectionFactory" ref="connectionFactory"></property>
+        <property name="acknowledgeMode" value="MANUAL"></property>
+        <property name="messageListener" ref="serverMessageListener"></property>
+    </bean>-->
+
+
+    <rabbit:direct-exchange name="direct.exchange" durable="false" auto-delete="false">
+    <rabbit:bindings>
+        <rabbit:binding key="com.yingmu.mq.test" queue="com.yingmu.mq.test"></rabbit:binding>
+    </rabbit:bindings>
+    </rabbit:direct-exchange>
+
+</beans>

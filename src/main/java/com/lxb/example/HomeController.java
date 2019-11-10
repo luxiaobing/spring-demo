@@ -6,6 +6,7 @@ import com.lxb.model.UserInfoDo;
 import com.lxb.service.IUserInfoService;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,9 +15,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.List;
+import java.util.*;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -64,6 +63,8 @@ public class HomeController {
         System.out.println(userCode);
         log.info("userCode:{}", JSON.toJSON(userCode));
         UserInfoDo userInfoDo = userInfoService.queryByUserCode(userCode);
+        log.info("startSendMsg");
+
         log.info("userInfoDo:{}", JSON.toJSON(userInfoDo));
         //返回一个index.jsp这个视图
         return "index";
