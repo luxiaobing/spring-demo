@@ -10,6 +10,7 @@
 -  使用spring + jta 实现了多个数据源下的分布式事物
 -  新增加了导出多个sheet、多级header的excel的功能
 -  引入dubbo rpc服务,配合dubbo-demo即可直接使用
+-  引入RabbitMq 消息中间件
 ## 后续计划
 -  引入redis缓存
 -  会持续将项目拆分为多个节点

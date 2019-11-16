@@ -14,23 +14,20 @@
     <rabbit:template exchange="direct.exchange" id="amqpTemplate" connection-factory="connectionFactory"  routing-key="wzh"/>
 
     <!--  申明一个消息队列Queue   -->
-    <rabbit:queue id="rabbitQueue" name="com.yingmu.mq.test" durable="false" auto-delete="false"/>
-    <!--<bean id="serverMessageListener" class="com.hh.listener.ServerMessageListener"/>
-    <bean id="messageContainer" class="org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer">
-        <property name="queues" ref="rabbitQueue"></property>
-        <property name="exposeListenerChannel" value="true"></property>
-        <property name="maxConcurrentConsumers" value="10"></property>
-        <property name="concurrentConsumers" value="2"></property>
-        <property name="connectionFactory" ref="connectionFactory"></property>
-        <property name="acknowledgeMode" value="MANUAL"></property>
-        <property name="messageListener" ref="serverMessageListener"></property>
-    </bean>-->
-
+   <rabbit:queue id="com.yingmu.mq.test" name="com.yingmu.mq.test.key" durable="false" auto-delete="false"/>
 
     <rabbit:direct-exchange name="direct.exchange" durable="false" auto-delete="false">
     <rabbit:bindings>
         <rabbit:binding key="com.yingmu.mq.test" queue="com.yingmu.mq.test"></rabbit:binding>
+
     </rabbit:bindings>
     </rabbit:direct-exchange>
+
+
+
+
+    <rabbit:fanout-exchange name="com.yingmu.fanout.exchange" xmlns="http://www.springframework.org/schema/rabbit" durable="true">
+    </rabbit:fanout-exchange>
+
 
 </beans>
