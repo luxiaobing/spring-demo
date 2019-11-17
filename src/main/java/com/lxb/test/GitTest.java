@@ -20,5 +20,8 @@ public class GitTest {
         
 
         System.out.println("4");
+
+        System.out.println("6");
+
     }
 }
